@@ -1,5 +1,8 @@
+import AppRouter from "./router/AppRouter";
+import "./styles/main.scss";
+
 function App() {
-  return <h1>Cartloom</h1>;
+  return <AppRouter />;
 }
 
 export default App;
