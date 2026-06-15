@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("SmartCart API is running");
+  res.send("Cartloom API is running");
 });
 
 app.use("/api/auth", authRoutes);
