@@ -25,17 +25,20 @@ const getProductById = async (req, res) => {
 
 const createProduct = async (req, res) => {
   try {
+    const { name, price, description, image, brand, category, countInStock } = req.body;
+
     const product = new Product({
       user: req.user._id,
-      name: "Sample Product",
-      image: "/images/sample.jpg",
-      brand: "Sample Brand",
-      category: "Sample Category",
-      description: "Sample description",
-      price: 0,
-      countInStock: 0,
+      name,
+      price,
+      description,
+      image,
+      brand,
+      category,
+      countInStock,
       numReviews: 0,
       rating: 0,
+      reviews: [],
     });
 
     const createdProduct = await product.save();
