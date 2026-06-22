@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <p>© 2026 Cartloom. All rights reserved.</p>
+        <p>© 2026 SmartCart. All rights reserved.</p>
       </div>
     </footer>
   );

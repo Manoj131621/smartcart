@@ -1,0 +1,62 @@
+.product-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  &__image {
+    display: block;
+
+    img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  &__content {
+    padding: 1rem;
+  }
+
+  &__title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #111827;
+  }
+
+  &__category,
+  &__brand {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 0.4rem;
+  }
+
+  &__price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0.8rem 0;
+    color: #0f172a;
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #111827;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 0.95rem;
+
+    &:disabled {
+      background: #9ca3af;
+      cursor: not-allowed;
+    }
+  }
+}
